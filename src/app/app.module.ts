@@ -25,7 +25,10 @@ import { DashboardComponent } from './dashboard/dashboard.component'
 import { CreateJokeComponent } from './create-joke/create-joke.component'
 import { EditProfileComponent } from './profile/edit-profile/edit-profile.component';
 import { JokeComponent } from './joke/joke.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { TestComponent } from './test/test.component';
+import { TablaComponent } from './tabla/tabla.component';
+import { CaratulaComponent } from './caratula/caratula.component'
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { HomeComponent } from './home/home.component'
     FollowComponent,
     CreateJokeComponent,
     JokeComponent,
-    HomeComponent
+    HomeComponent,
+    TestComponent,
+    TablaComponent,
+    CaratulaComponent
   ],
   imports: [
     BrowserModule, 

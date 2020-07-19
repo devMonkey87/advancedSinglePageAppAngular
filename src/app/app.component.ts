@@ -1,5 +1,5 @@
 import { User } from './classes/user'
-import { Component } from '@angular/core'
+import { Component, EventEmitter } from '@angular/core'
 import { AuthService } from './services/auth.service'
 
 @Component({
@@ -10,6 +10,7 @@ import { AuthService } from './services/auth.service'
 export class AppComponent {
   title = 'app'
   user: User 
+  resultado : string;
 
   constructor(
     private authService: AuthService
@@ -23,5 +24,17 @@ export class AppComponent {
 
   logout() {
     this.authService.logout()
+  }
+
+  test() {
+    this.authService.test()
+  }
+
+  emites(event){
+    this.resultado = event;
+    console.log('hola???',this.resultado);
+
+   
+    alert('hey baby  ' + this.resultado);
   }
 }

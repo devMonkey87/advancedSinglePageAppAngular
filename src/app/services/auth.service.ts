@@ -77,6 +77,10 @@ export class AuthService {
         this.router.navigate(['/auth/login'])
     }
 
+    test() {
+        this.router.navigate(['/auth/test'])
+    }
+
     getAuthUser(): User {
         return JSON.parse(localStorage.getItem('user'))
     }

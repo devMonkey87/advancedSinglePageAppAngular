@@ -17,6 +17,8 @@
         <li><a *ngIf="!isLoggedIn()" routerLink="/auth/login">Login</a> </li>
         <li><a *ngIf="!isLoggedIn()" routerLink="/auth/register">Register</a> </li>
         <li><a *ngIf="isLoggedIn()" (click)="logout()">Logout</a> </li>
+        <li><a (click)="test()">Testings</a> </li>
+
       </ul>
     </div>
   </div>

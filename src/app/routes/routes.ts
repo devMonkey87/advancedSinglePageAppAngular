@@ -1,3 +1,4 @@
+import { TestComponent } from './../test/test.component';
 import { AuthGuard } from './../guards/auth.guard'
 import { AuthedGuard } from './../guards/authed.guard'
 import { HomeComponent } from './../home/home.component'
@@ -28,6 +29,11 @@ export const ROUTES = [
     {
         path: 'auth/login',
         component: LoginComponent,
+        canActivate: [AuthedGuard]
+    },
+    {
+        path: 'auth/test',
+        component: TestComponent,
         canActivate: [AuthedGuard]
     },
     {
